@@ -1,4 +1,4 @@
-# Installing fastAI work environment with linux
+# Installing fastAI work environment in linux
 
 Quick summary on how to setup the fastai work environment for local linux development with machine learning. For python development I highly recommend using linux.
 If you must use windows then you will need to seek out different steps with the miniconda and environment installation.
