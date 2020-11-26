@@ -35,10 +35,10 @@ There are some additional dependencies needed for your environment, make sure yo
 # linux only, install jupyter for running notebooks locally
 conda install jupyter
 
-# this is a fastai tool that allows developers to develop libraries within jupyter.
+# this is a fastai tool that allows developers to develop libraries within jupyter
 pip install nbdev
 
-# install repo paths for environment.
+# install repo paths for environment
 cd /path/to/fastai
 pip install -e .
 ```
@@ -66,6 +66,7 @@ If everything is passing, then the installation is complete.
 ## Running fastai Notebooks with Jupyter
 
 Since we have installed jupyter in the previous steps we should be able to enter `jupyter notebook` into the command line to open our local jupyter instance. Jupyter will open in your default browser. If not then Jupyter supplies the following commands to manually enter into a web browser:
+
 ```bash
 To access the notebook, open this file in a browser:
         file:///home/aidan/.local/share/jupyter/runtime/nbserver-35451-open.html
@@ -75,3 +76,26 @@ To access the notebook, open this file in a browser:
 ```
 
 If the following URL's still don't work please refer to this [troubleshooting guide](https://jupyter-notebook.readthedocs.io/en/stable/troubleshooting.html) if this isn't the case.
+
+## Setting up fastAudio
+
+fastAudio is an experimental package based off fastai v2 (which we have installed in the above instructions).
+
+You will need to setup a seperate environment from your fastai env that you've created seperately since the 2 projects require different versions of python.
+
+```bash
+# Make sure you are in the base miniconda environment
+conda env create -n fastaudio python=3.7 jupyter
+```
+
+We don't need `nbdev` as this package uses `pytest` to run the unit tests.
+
+```bash
+git clone git@github.com:fastaudio/fastaudio.git
+cd fastaudio
+
+# install with dev and testing flags to enable editing
+pip install -e .[dev, testing]
+```
+
+Run the tests by entering `pytest` into the root directory of the repository to validate your environment.
