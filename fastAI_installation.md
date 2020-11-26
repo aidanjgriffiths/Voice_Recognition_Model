@@ -11,9 +11,7 @@ NOTE: If you are developing on windows then Anaconda might be a better option.
 
 You should be able to install the rest with the [conda.io instructions](https://conda.io/projects/conda/en/latest/user-guide/install/linux.html).
 
-## Installing the fastAI Python Environment
-
-NOTE: this will take a while since there are some large dependencies within this environment.
+## Clone the fastAI Repository
 
 First clone the fastAI github repository. Make sure to run this command in the directory you wish to work in.
 
@@ -21,6 +19,12 @@ First clone the fastAI github repository. Make sure to run this command in the d
 git clone git@github.com:fastai/fastai.git
 cd fastai/
 ```
+
+If this is your first time using github on the command line then you might have to setup a ssh key for your github account. Checkout [this guide](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connecting-to-github-with-ssh) for details. 
+
+## Installing the fastAI Python Environment
+
+NOTE: this will take a while since there are some large dependencies within this environment.
 
 Install the python dependencies in a virtual environment named fastai and use the fastai yaml file to point to the required dependencies.
 
