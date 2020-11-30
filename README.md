@@ -20,7 +20,7 @@ git clone git@github.com:fastai/fastai.git
 cd fastai/
 ```
 
-If this is your first time using github on the command line then you might have to setup a ssh key for your github account. Checkout [this guide](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connecting-to-github-with-ssh) for details. 
+If this is your first time using github on the command line then you might have to setup a ssh key for your github account. Checkout [this guide](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) for setting up ssh with github. 
 
 ## Installing the fastAI Python Environment
 
